@@ -1,0 +1,9 @@
+#ARG lan link body
+<a class="container-item-link" href="## link ##">
+    <div class="container-item">
+        <div style="text-align: center;">
+            <h1>## lan ##</h1>
+            <img width="200" height="200" src="images/## body ##.png">
+        </div>
+    </div>
+</a>

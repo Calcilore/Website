@@ -1,0 +1,12 @@
+#ARG title body img link
+<a class="container-item-link" href="## link ##">
+    <div class="container-item">
+        <div>
+            <h3> ## title ## </h3>
+            <p> ## body ## </p>
+        </div>
+        
+    
+        <img width="200" height="200" src="## img ##">
+    </div>
+</a>
