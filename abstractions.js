@@ -68,6 +68,8 @@ async function abstratify(doc, depth = 0) { // depth is so there isnt an infinit
             hrCache[hr] = hCode;
         }
 
+        console.log(hCode);
+
         // Find all arguments
         const endIndex = Math.min(hCode.indexOf("\n"), hCode.indexOf("\r"));
         const args = hCode.substring(5, endIndex).split(' ');
@@ -86,6 +88,8 @@ async function abstratify(doc, depth = 0) { // depth is so there isnt an infinit
 
             hCode = hCode.replace(findStr, replaceStr);
         }
+
+        console.log(hCode);
 
         const abDocument = parser.parseFromString(hCode, "text/html"); // convert to document
 
