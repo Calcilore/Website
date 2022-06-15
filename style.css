@@ -51,12 +51,12 @@ body {
     text-decoration: none;
 }
 
-.container-item:hover {
+.container-item-button:hover {
     background-color: #333355;
     color: #bbbbbb;
 }
 
-.container-item:active {
+.container-item-button:active {
     background-color: #222233;
     color: #999999;
 }
@@ -83,4 +83,23 @@ body {
 
 .title {
     justify-self: right;
+}
+
+a:link {
+    color: #87bad1;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #5f808f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5f808f;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #26343a;
 }
