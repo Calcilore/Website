@@ -81,6 +81,13 @@ body {
     justify-items: center;
 }
 
+.footer-link {
+    display: flex; 
+    flex-direction: column; 
+    gap: 12px; 
+    align-items: center;
+}
+
 .title {
     justify-self: right;
 }

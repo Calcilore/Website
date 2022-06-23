@@ -3,4 +3,27 @@
     <div class="footer">
         <h3>This Website was made by Calcilore with the power of <a href="/projects/abstractions/">Abstractions</a></h3>
     </div>
+
+    <br>
+    <br>
+
+    <div class="footer" style="height: 120px;">
+        <a href="https://github.com/Calcilore" style="width: 300px;">
+            <div class="footer-link"> 
+                <img width="64px" height="64px" src="/images/githubIcon.svg" style="filter: invert(100%);"> <h3> https://github.com/Calcilore </h3> 
+            </div>
+        </a>
+
+        <a href="mailto:contact@adamflore.com" style="width: 300px;">
+            <div class="footer-link"> 
+                <img width="64px" height="64px" src="/images/mail.svg" style="filter: invert(100%);"> <h3> contact@adamflore.com </h3> 
+            </div>
+        </a>
+
+        <a href="https://discord.com/users/379119850678910979" style="width: 300px;">
+            <div class="footer-link"> 
+                <img width="64px" height="64px" src="/images/Discord.svg"> <h3> Calcilore#3266 </h3> 
+            </div>
+        </a>
+    </div>
 </div>
