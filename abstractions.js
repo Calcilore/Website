@@ -45,8 +45,9 @@ async function importAb(path) {
 
 async function abstratify(doc, depth = 0) { // depth is so there isnt an infinite loop
     const elements = doc.getElementsByTagName("abs");
+    let i2 = 0;
 
-    for (let i = 0; i < elements.length; i++) {
+    for (let i = 0; i < elements.length - i2; i++) {
         if (depth >= maxDepth) {
             console.error("Max abstractions depth reached!");
             return;
@@ -93,17 +94,18 @@ async function abstratify(doc, depth = 0) { // depth is so there isnt an infinit
         }
 
         const abDocument = parser.parseFromString(hCode, "text/html"); // convert to document
-
+        
         // allow abstracts inside of abstracts by just running abstract on the inserted code
         // depth is for accidental recursion
         if (depth < maxDepth) {
-            depth = depth + 1;
-            await abstratify(abDocument, depth);
+            i2 = i2 + await abstratify(abDocument, depth + 1);
         }
-        
+
         // actually insert code
         elements[i].innerHTML = abDocument.documentElement.innerHTML;
     } 
+
+    return elements.length;
 }
 
 abstratify(document);
