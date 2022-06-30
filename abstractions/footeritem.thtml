@@ -1,0 +1,6 @@
+#ARG link img invert body
+<a href="## link ##" style="width: 300px;">
+    <div class="footer-link"> 
+        <img width="64px" height="64px" src="## img ##" style="filter: invert(## invert ##);"> <h3> ## body ## </h3> 
+    </div>
+</a>

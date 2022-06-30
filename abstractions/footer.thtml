@@ -8,22 +8,8 @@
     <br>
 
     <div class="footer" style="height: 120px;">
-        <a href="https://github.com/Calcilore" style="width: 300px;">
-            <div class="footer-link"> 
-                <img width="64px" height="64px" src="/images/githubIcon.svg" style="filter: invert(100%);"> <h3> https://github.com/Calcilore </h3> 
-            </div>
-        </a>
-
-        <a href="mailto:contact@adamflore.com" style="width: 300px;">
-            <div class="footer-link"> 
-                <img width="64px" height="64px" src="/images/mail.svg" style="filter: invert(100%);"> <h3> contact@adamflore.com </h3> 
-            </div>
-        </a>
-
-        <a href="https://discord.com/users/379119850678910979" style="width: 300px;">
-            <div class="footer-link"> 
-                <img width="64px" height="64px" src="/images/Discord.svg"> <h3> Calcilore#3266 </h3> 
-            </div>
-        </a>
+        <abs href="/abstractions/footeritem.thtml" link="https://github.com/Calcilore" img="/images/githubIcon.svg" invert="100%"> https://github.com/Calcilore </abs>
+        <abs href="/abstractions/footeritem.thtml" link="mailto:contact@adamflore.com" img="/images/mail.svg" invert="100%"> contact@adamflore.com </abs>
+        <abs href="/abstractions/footeritem.thtml" link="https://discord.com/users/379119850678910979" img="/images/Discord.svg" invert="0%"> Calcilore#3266 </abs>
     </div>
 </div>
